@@ -1,13 +1,34 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap");
+
+:root {
+  --main-text-color: #141c3a;
+  --blue: #3069f0;
+  --red: #fd4d3f;
+  --gray: rgba(20, 28, 58, 0.5);
+  --shadow: 0 0 21px 0 rgba(20, 28, 58, 0.7);
+  --white: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  font-family: "Oxygen", sans-serif;
+  color: var(--main-text-color);
+  padding: 24px 20px 0px 20px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 53px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.budget-container {
+  list-style: none;
+  padding: 16px 0px 24px 0px;
+  border-bottom: solid 1px var(--main-text-color);
+}
+
+.comments-container {
+  padding: 0;
 }

@@ -32,10 +32,8 @@ const Budget = ({ budget }) => {
     return (
         <li className="budget-container">
             <div className="category-label">Category</div>{' '}
-
             <div className="category-wrapper">
                 <h3 className="category-value">{budget.category}</h3>
-
                 <form onSubmit={handleEdit} className="budget-form">
                     <input
                         className="amount-input"
@@ -47,12 +45,9 @@ const Budget = ({ budget }) => {
                     <button className="update-button">Update</button>
                 </form>
             </div>
-
-
             <h4 className={`remaining-funds ${fundsRemainingClassName}`}>
                 Funds Remaining: {remainingFunds}
             </h4>
-
         </li>
     );
 };
