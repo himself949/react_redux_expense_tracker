@@ -23,10 +23,23 @@ h1 {
   margin-bottom: 32px;
 }
 
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
 h3 {
   font-size: 30px;
   font-weight: bold;
   margin: 2px 0px 0px 0px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
 }
 
 input {
@@ -35,6 +48,14 @@ input {
   border: solid 1px #141c3a;
   font-size: 14px;
   width: 80px;
+}
+
+select {
+  padding: 7px 16px 8px 12px;
+  border-radius: 6px;
+  border: solid 1px #141c3a;
+  background-color: #ffffff;
+  text-transform: capitalize;
 }
 
 .budget-container {
@@ -67,6 +88,92 @@ input {
   padding: 0;
 }
 
+.description {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.new-transaction {
+  padding: 12px 10.5px 11px 16px;
+  border-radius: 6px;
+  border: solid 1px #141c3a;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.new-transaction button {
+  margin-left: auto;
+  background: white;
+  border: solid 1px #141c3a;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.new-transaction button:hover,
+.new-transaction button:focus {
+  color: white;
+  background-color: #141c3a;
+}
+
+.new-transaction-list {
+  list-style: none;
+  padding: 0;
+}
+
+.new-transaction-section {
+  background: var(--main-text-color);
+  color: var(--white);
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 24px 20px;
+  padding-bottom: 38px;
+  box-shadow: var(--shadow);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.new-transaction-section button {
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: solid 1px #ffffff;
+  background-color: #141c3a;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.new-transaction-section button:hover,
+.new-transaction-section button:focus {
+  background-color: #ffffff;
+  color: #141c3a;
+}
+
+.new-transaction-section label {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
 .remaining-funds.positive {
   color: var(--blue);
 }
@@ -84,4 +191,14 @@ input {
   background: var(--white);
   margin-left: 16px;
   cursor: pointer;
+}
+
+.update-button:hover,
+.update-button:focus {
+  background-color: #141c3a;
+  color: #ffffff;
+}
+
+.new-transactions-section {
+  padding-bottom: 350px;
 }
