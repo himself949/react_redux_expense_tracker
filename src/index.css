@@ -23,12 +23,65 @@ h1 {
   margin-bottom: 32px;
 }
 
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 2px 0px 0px 0px;
+}
+
+input {
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: solid 1px #141c3a;
+  font-size: 14px;
+  width: 80px;
+}
+
 .budget-container {
   list-style: none;
   padding: 16px 0px 24px 0px;
   border-bottom: solid 1px var(--main-text-color);
 }
 
+.budget-form {
+  margin-left: auto;
+}
+
+.category-label {
+  color: var(--gray);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.category-value {
+  text-transform: capitalize;
+}
+
+.category-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
 .comments-container {
   padding: 0;
+}
+
+.remaining-funds.positive {
+  color: var(--blue);
+}
+
+.remaining-funds.negative {
+  color: var(--red);
+}
+
+.update-button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: solid 1px #141c3a;
+  font-size: 18px;
+  font-weight: bold;
+  background: var(--white);
+  margin-left: 16px;
+  cursor: pointer;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import BudgetsDisplay from '../features/budgets/BudgetsDisplay'
+import Transactions from '../features/transactions/Transactions';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <header className="App-header">
         <h1>Expense Tracker</h1>
         <BudgetsDisplay />
-        {/*<Transactions />*/}
+        <Transactions />
       </header>
     </div>
   );
